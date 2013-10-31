@@ -1,7 +1,7 @@
 <?php
 /*
 Plugin Name: WordPress Mail Changer
-Plugin URI: http://wpmu.io
+Plugin URI: http://shoestrap.org
 Description: A simple and easy way to change the default email address used by WordPress for generic emails.
 Author: Aristeides Stathopoulos
 Author URI: http://aristeides.com

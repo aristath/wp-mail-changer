@@ -1,4 +1,4 @@
-=== Plugin Name ===
+=== WordPress Mail Changer ===
 Contributors: aristath
 Donate link: http://aristeides.com
 Tags: email
@@ -14,7 +14,7 @@ This plugin will allow you to change the email from address and name that WordPr
 
 This plugin will allow you to change the email from address and name that WordPress uses by default.
 
-It is pretty simple and stranghtforward, no complicated functions and forms.
+It is pretty simple and straight-forward, no complicated functions and forms.
 On activation you should see a new menu in your "Settings" section called "Mail Change".
 In that page you can define 2 fields:
 
