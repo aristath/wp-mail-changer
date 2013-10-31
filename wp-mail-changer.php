@@ -53,6 +53,11 @@ function wpmc_options_page() {
 							<label class="description" for="mail_from_name"><?php _e( 'Enter your "from" email address' ); ?></label>
 						</td>
 					</tr>
+					<tr>
+						<td colspan="2">
+							Please note that in order for the name to be used, the email address will also have to be valid.
+						</td>
+					</tr>
 				</tbody>
 			</table>	
 			<?php submit_button(); ?>
