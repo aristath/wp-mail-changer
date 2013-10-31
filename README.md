@@ -1,16 +1,26 @@
-=== Plugin Name ===
+# WordPress Mail Changer
+
+
 Contributors: aristath
+
 Donate link: http://aristeides.com
+
 Tags: email
+
 Requires at least: 3.0.0
+
 Tested up to: 3.7.1
+
 Stable tag: 1.0
+
 License: GPLv2 or later
+
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
+
 
 This plugin will allow you to change the email from address and name that WordPress uses by default.
 
-== Description ==
+## Description
 
 This plugin will allow you to change the email from address and name that WordPress uses by default.
 
@@ -23,13 +33,11 @@ In that page you can define 2 fields:
 
 That's all there is to it... have fun!
 
-== Installation ==
+## Installation
 
 Install and activate like any other WordPress plugin. See here for detailed instructions: http://codex.wordpress.org/Managing_Plugins
 
-== Screenshots ==
+## Changelog
 
-== Changelog ==
-
-= 1.0 =
-* Initial Commit
+### 1.0
+* Initial Version
