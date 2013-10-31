@@ -36,7 +36,7 @@ function wpmc_options_page() {
 							<?php _e('Email Address'); ?>
 						</th>
 						<td>
-							<input id="wpmc_mail_from" name="wpmc_mail_from" type="text" class="email" value="<?php echo $mail_from; ?>" />
+							<input id="wpmc_mail_from" name="wpmc_mail_from" type="text" class="email" value="<?php esc_attr_e( $mail_from ); ?>" />
 							<?php if ( $mail_from != '' && !filter_var( $mail_from, FILTER_VALIDATE_EMAIL ) ) : ?>
 								<label class="description" for="wpmc_mail_from"><span style="color: red;"><?php _e( 'Invalid address, please enter a valid email address.' ); ?></span></label>
 							<?php else : ?>
@@ -49,8 +49,8 @@ function wpmc_options_page() {
 							<?php _e('Email Name'); ?>
 						</th>
 						<td>
-							<input id="wpmc_mail_from_name" name="wpmc_mail_from_name" type="text" class="regular-text" value="<?php echo $mail_from; ?>" />
-							<label class="description" for="wpmc_mail_from"><?php _e( 'Enter your "from" email address' ); ?></label>
+							<input id="wpmc_mail_from_name" name="wpmc_mail_from_name" type="text" class="regular-text" value="<?php esc_attr_e( $mail_from_name ); ?>" />
+							<label class="description" for="mail_from_name"><?php _e( 'Enter your "from" email address' ); ?></label>
 						</td>
 					</tr>
 				</tbody>
@@ -90,13 +90,13 @@ function wpmc_mail_from_name( $email_from ) {
 }
 
 function wpmc_apply_filters() {
-	$mail_from = get_option( 'wpmc_mail_from' );
+	$mail_from      = get_option( 'wpmc_mail_from' );
 	$mail_from_name = get_option( 'wpmc_mail_from_name' );
 
 	if ( $mail_from != '' && filter_var( $mail_from, FILTER_VALIDATE_EMAIL ) )
 		add_filter( 'wp_mail_from', 'wpmc_mail_from' );
 
-	if ( $mail_from_name != '' )
+	if ( $mail_from_name != '' && $mail_from != '' && filter_var( $mail_from, FILTER_VALIDATE_EMAIL ) )
 		add_filter( 'wp_mail_from_name', 'wpmc_mail_from_name' );
 
 }
