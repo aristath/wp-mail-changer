@@ -11,7 +11,7 @@
 
 // Exit if accessed directly.
 if ( ! \defined( 'ABSPATH' ) ) {
-	\exit;
+	exit;
 }
 
 // Register the settings.
@@ -28,7 +28,8 @@ if ( ! \defined( 'ABSPATH' ) ) {
 
 // Filter the from email name.
 \add_filter( 'wp_mail_from_name', function ( $email_from ) {
-	return \get_option( 'wpmc_mail_from_name', $email_from );
+	$value = \get_option( 'wpmc_mail_from_name', $email_from );
+	return $value ? $value : $email_from;
 } );
 
 
