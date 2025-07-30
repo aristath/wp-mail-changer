@@ -1,9 +1,9 @@
 === WordPress Mail Changer ===
 Contributors: aristath
-Donate link: http://aristeides.com
+Donate link: https://aristath.github.io
 Tags: email
-Requires at least: 3.0.0
-Tested up to: 3.7.1
+Requires at least: 6.6
+Tested up to: 6.8
 Stable tag: 1.1.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
