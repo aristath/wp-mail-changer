@@ -2,7 +2,7 @@
 Contributors: aristath
 Donate link: https://aristath.github.io
 Tags: email
-Requires at least: 6.6
+Requires at least: 3.0
 Tested up to: 6.8
 Stable tag: 1.1.0
 License: GPLv2 or later
