@@ -1,6 +1,6 @@
 <?php
 /**
- * Plugin Name: WordPress Mail Changer
+ * Plugin Name: WP Mail Changer
  * Plugin URI: https://aristath.github.io
  * Description: A simple and easy way to change the default email address used by WordPress for generic emails.
  * Author: Aristeides Stathopoulos
