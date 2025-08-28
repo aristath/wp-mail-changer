@@ -1,4 +1,4 @@
-=== WordPress Mail Changer ===
+=== WP Mail Changer ===
 Contributors: aristath
 Donate link: https://aristath.github.io
 Tags: email
